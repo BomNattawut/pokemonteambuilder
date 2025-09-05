@@ -1,16 +1,34 @@
-# teambuilderapp
+# Pokémon Team Builder App 🐱‍👤
 
-A new Flutter project.
+แอปนี้พัฒนาโดยใช้ **Flutter + GetX + GetStorage**  
+ให้ผู้ใช้สามารถเลือก **ทีม Pokémon ได้สูงสุด 3 ตัว** จากรายชื่อ Pokémon อย่างน้อย 20 ตัว  
+และสามารถแก้ไขชื่อทีมได้ ข้อมูลจะถูกบันทึกด้วย **GetStorage** (เปิดปิดแอปแล้วข้อมูลยังอยู่)  
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
+- เลือก Pokémon ทีมได้สูงสุด 3 ตัว
+- แก้ไขชื่อทีม
+- Reset ทีม
+- ข้อมูลทีมและชื่อทีมจะถูกบันทึกลง **Local storage (GetStorage)**
+- (Optional) Fetch ข้อมูล Pokémon จาก **PokeAPI**
+- (Optional) Search bar สำหรับค้นหา Pokémon
+- (Optional) Visual feedback/animations เมื่อเลือกหรือยกเลิก Pokémon
 
-A few resources to get you started if this is your first Flutter project:
+## 📦 Dependencies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.6
+  get_storage: ^2.1.1
+  http: ^1.2.2  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##  installation
+
+1.ติดตั้ง Flutter SDK  ลิงค์ https://flutter.dev/
+2. ติดตั้ง andorid studio ลิงค์ https://developer.android.com/studio?hl=th
+3. ทำการbuild device ผ่านandroid studio
+4.ทำการCloneตัวโปรเจกต์นี้ ผ่านคำสั่ง git clone https://github.com/BomNattawut/pokemonteambuilder.git
+5.cd เข้าไปที่ตัวโปรเจกต์ เเล้ว ใช้คำสั่ง flutter pub get เพื่อทำการติดตั้งdependencies ที่จำเป็นสำหรับเเอพ
+6.ใช้คำสั่งflutter run เพื่อเปิดเเอพ
+
