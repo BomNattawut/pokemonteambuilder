@@ -36,9 +36,12 @@ dependencies:
 4. ทำการ Clone ตัวโปรเจกต์นี้  
    ```bash
    git clone https://github.com/BomNattawut/pokemonteambuilder.git
+
 5. เข้าไปที่ตัวโปรเจกต์และติดตั้ง dependencies ที่จำเป็นสำหรับแอพ
   cd pokemonteambuilder
   flutter pub get
+
+
 6.ใช้คำสั่งเพื่อรันแอพ  flutter run
 
 
