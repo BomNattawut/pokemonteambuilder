@@ -40,7 +40,8 @@ dependencies:
 5. เข้าไปที่ตัวโปรเจกต์และติดตั้ง dependencies ที่จำเป็นสำหรับแอพ
     ```bash
    cd pokemonteambuilder
-   flutter pub get
+    
+     flutter pub get
 
 6.ใช้คำสั่งเพื่อรันแอพ  flutter run
 
