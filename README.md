@@ -1,18 +1,4 @@
-# Pokémon Team Builder App
 
-แอปนี้พัฒนาโดยใช้ **Flutter + GetX + GetStorage**  
-ให้ผู้ใช้สามารถเลือก **ทีม Pokémon ได้สูงสุด 3 ตัว** จากรายชื่อ Pokémon อย่างน้อย 20 ตัว  
-และสามารถแก้ไขชื่อทีมได้ ข้อมูลจะถูกบันทึกด้วย **GetStorage** (เปิดปิดแอปแล้วข้อมูลยังอยู่)  
-
-## Features
-
-- เลือก Pokémon ทีมได้สูงสุด 3 ตัว
-- แก้ไขชื่อทีม
-- Reset ทีม
-- ข้อมูลทีมและชื่อทีมจะถูกบันทึกลง **Local storage (GetStorage)**
-- (Optional) Fetch ข้อมูล Pokémon จาก **PokeAPI**
-- (Optional) Search bar สำหรับค้นหา Pokémon
-- (Optional) Visual feedback/animations เมื่อเลือกหรือยกเลิก Pokémon
 
 ## Dependencies
 
