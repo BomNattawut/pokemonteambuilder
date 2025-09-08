@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:teambuilderapp/pages/previewteam.dart';
 import '../controllers/team_controller.dart';
 import '../models/pokemon.dart';
 
@@ -56,26 +57,46 @@ class TeamBuilderPage extends StatelessWidget {
     ),
         ],
       ),
-
+      
       // ปุ่มแก้ไขชื่อทีม
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.edit),
-        onPressed: () {
-          Get.defaultDialog(
-            title: "Edit Team Name",
-            content: TextField(
-              decoration: const InputDecoration(
-                hintText: "Enter new team name",
-              ),
-              onSubmitted: (value) {
-                controller.setTeamName(value);
-                Get.back();
-              },
-            ),
-          );
-        },
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          // ปุ่มแก้ไขชื่อทีม
+          FloatingActionButton(
+            heroTag: "editBtn",
+            child: const Icon(Icons.edit),
+            onPressed: () {
+              Get.defaultDialog(
+                title: "Edit Team Name",
+                content: TextField(
+                  decoration: const InputDecoration(
+                    hintText: "Enter new team name",
+                  ),
+                  onSubmitted: (value) {
+                    controller.setTeamName(value);
+                    Get.back();
+                  },
+                ),
+              );
+            },
+          ),
+          const SizedBox(width: 12),
+
+          // ปุ่มไปหน้า Preview Team
+          FloatingActionButton(
+            heroTag: "previewBtn",
+            backgroundColor: Colors.green,
+            child: const Icon(Icons.visibility),
+            onPressed: () {
+              Get.to(() => PreviewTeamPage()); // 👈 ใช้ GetX routing
+            },
+          ),
+        ],
       ),
+       
     );
+
   }
 
   Widget _buildTeamMember(Pokemon p) {
